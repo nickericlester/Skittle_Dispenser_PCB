@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mic" unit="mic" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -678,6 +678,7 @@ chip</description>
 <text x="0" y="4.064" size="1.778" layer="96" align="center">&gt;VALUE</text>
 </symbol>
 <symbol name="2_PIN_HEADER">
+<description>2 Pin Header: https://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/Female_Headers.100_DS.pdf</description>
 <wire x1="-2.794" y1="1.27" x2="-2.794" y2="-1.27" width="0.1524" layer="94"/>
 <wire x1="-2.794" y1="-1.27" x2="2.794" y2="-1.27" width="0.1524" layer="94"/>
 <wire x1="2.794" y1="-1.27" x2="2.794" y2="1.27" width="0.1524" layer="94"/>
@@ -689,6 +690,7 @@ chip</description>
 <text x="0.635" y="-3.175" size="1.778" layer="97">+</text>
 </symbol>
 <symbol name="3_PIN_HEADER">
+<description>3 Pin Header: https://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/Female_Headers.100_DS.pdf</description>
 <wire x1="-4.064" y1="1.27" x2="-4.064" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="-4.064" y1="-1.27" x2="4.064" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="4.064" y1="-1.27" x2="4.064" y2="1.27" width="0.254" layer="94"/>
@@ -702,6 +704,7 @@ chip</description>
 <text x="-0.635" y="-3.175" size="0.762" layer="97">SIG</text>
 </symbol>
 <symbol name="BARREL_CONNECTOR">
+<description>Barrel Connector: https://www.adafruit.com/product/373</description>
 <wire x1="5.08" y1="7.62" x2="-15.24" y2="7.62" width="2.54" layer="94"/>
 <wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.508" layer="94"/>
 <wire x1="-5.08" y1="-7.62" x2="-10.16" y2="-2.54" width="0.508" layer="94"/>
@@ -718,6 +721,7 @@ chip</description>
 <text x="-20.32" y="-6.35" size="2.54" layer="97">-</text>
 </symbol>
 <symbol name="PS1240_BUZZER">
+<description>PS1240 Buzzer: https://www.adafruit.com/product/160?gclid=Cj0KCQiAi57gBRDqARIsABhDSMod10IM6KqyKNG4e1XYbRL67-mP7OMwaXZ0MBZD_4btt3ozxb4l5BUaAtnaEALw_wcB</description>
 <wire x1="-6.1" y1="0" x2="-3.5" y2="0" width="0.15" layer="94"/>
 <wire x1="-3.5" y1="0" x2="-1.5" y2="0" width="0.15" layer="94"/>
 <wire x1="-1.5" y1="0" x2="1.5" y2="0" width="0.15" layer="94"/>
@@ -958,6 +962,7 @@ DIN A3, landscape with location and doc. field</description>
 </devices>
 </deviceset>
 <deviceset name="2_PIN_HEADER">
+<description>2 Pin Header: https://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/Female_Headers.100_DS.pdf</description>
 <gates>
 <gate name="G$1" symbol="2_PIN_HEADER" x="0" y="0"/>
 </gates>
@@ -974,6 +979,7 @@ DIN A3, landscape with location and doc. field</description>
 </devices>
 </deviceset>
 <deviceset name="3_PIN_HEADER">
+<description>3 Pin Header: https://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/Female_Headers.100_DS.pdf</description>
 <gates>
 <gate name="G$1" symbol="3_PIN_HEADER" x="0" y="0"/>
 </gates>
@@ -991,6 +997,7 @@ DIN A3, landscape with location and doc. field</description>
 </devices>
 </deviceset>
 <deviceset name="BARREL_CONNECTOR">
+<description>Barrel Connector: https://www.adafruit.com/product/373</description>
 <gates>
 <gate name="G$1" symbol="BARREL_CONNECTOR" x="0" y="0"/>
 </gates>
@@ -1008,6 +1015,7 @@ DIN A3, landscape with location and doc. field</description>
 </devices>
 </deviceset>
 <deviceset name="PS1240_BUZZER">
+<description>PS1240 Buzzer: https://www.adafruit.com/product/160?gclid=Cj0KCQiAi57gBRDqARIsABhDSMod10IM6KqyKNG4e1XYbRL67-mP7OMwaXZ0MBZD_4btt3ozxb4l5BUaAtnaEALw_wcB</description>
 <gates>
 <gate name="G$1" symbol="PS1240_BUZZER" x="0" y="0"/>
 </gates>
