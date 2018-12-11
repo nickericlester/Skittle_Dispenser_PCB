@@ -5,5 +5,6 @@
 "2";"2_PIN_HEADER";"2_PIN_HEADER";"2_PIN_HEADER";"FSR_PINS, IR_TRASMITTER_PINS";"2 Pin Header: https://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/Female_Headers.100_DS.pdf";"";
 "2";"3_PIN_HEADER";"3_PIN_HEADER";"3_PIN_HEADER";"IR_RECEIVER_PINS, SERVO_PINS";"3 Pin Header: https://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/Female_Headers.100_DS.pdf";"";
 "1";"BARREL_CONNECTOR";"BARREL_CONNECTOR";"BARREL_CONNECTOR";"BARREL_CONNECTOR";"Barrel Connector: https://www.adafruit.com/product/373";"";
+"3";"FIDUCIAL";"FIDUCIAL";"FIDUCIAL_40MIL";"FUD1, FUD2, FUD3";"";"";
 "1";"POCKETBEAGLE";"POCKETBEAGLE";"POCKETBEAGLE";"U1";"";"";
 "2";"PS1240_BUZZER";"PS1240_BUZZER";"PS1240_BUZZER";"BUZZER_1, BUZZER_2";"PS1240 Buzzer: https://www.adafruit.com/product/160?gclid=Cj0KCQiAi57gBRDqARIsABhDSMod10IM6KqyKNG4e1XYbRL67-mP7OMwaXZ0MBZD_4btt3ozxb4l5BUaAtnaEALw_wcB";"";
