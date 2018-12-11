@@ -30,8 +30,8 @@
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -379,6 +379,11 @@ chip</description>
 <text x="-1.27" y="1.27" size="0.8128" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-2.54" size="0.8128" layer="27">&gt;VALUE</text>
 </package>
+<package name="FIDUCIAL_40MIL">
+<circle x="0" y="0" radius="0.762" width="0.6096" layer="29"/>
+<circle x="0" y="0" radius="1.04726875" width="0.127" layer="41"/>
+<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100"/>
+</package>
 </packages>
 </library>
 <library name="Nick Lester Final">
@@ -645,14 +650,17 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <attribute name="VALUE" x="77.724" y="10.541" size="0.8128" layer="27" rot="R180"/>
 </element>
 <element name="BUZZER_1" library="Nick Lester Final" package="PS1240_BUZZER" value="PS1240_BUZZER" x="80.01" y="40.64" smashed="yes">
-<attribute name="NAME" x="73.11" y="48.04" size="1.27" layer="21" font="vector"/>
+<attribute name="NAME" x="73.745" y="48.04" size="1.27" layer="21" font="vector"/>
 </element>
 <element name="BUZZER_2" library="Nick Lester Final" package="PS1240_BUZZER" value="PS1240_BUZZER" x="8.89" y="40.64" smashed="yes">
-<attribute name="NAME" x="1.99" y="48.04" size="1.27" layer="21" font="vector"/>
+<attribute name="NAME" x="2.625" y="48.04" size="1.27" layer="21" font="vector"/>
 </element>
 <element name="BARREL_CONNECTOR" library="Nick Lester Final" package="BARREL_CONNECTOR" value="BARREL_CONNECTOR" x="7.493" y="12.065" smashed="yes" rot="MR180">
 <attribute name="NAME" x="13.863" y="11.775" size="0.762" layer="22" font="vector" rot="MR270"/>
 </element>
+<element name="FUD1" library="ENGI301" package="FIDUCIAL_40MIL" value="FIDUCIAL" x="87.63" y="49.53" smashed="yes"/>
+<element name="FUD2" library="ENGI301" package="FIDUCIAL_40MIL" value="FIDUCIAL" x="17.145" y="1.27" smashed="yes"/>
+<element name="FUD3" library="ENGI301" package="FIDUCIAL_40MIL" value="FIDUCIAL" x="87.63" y="1.27" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">

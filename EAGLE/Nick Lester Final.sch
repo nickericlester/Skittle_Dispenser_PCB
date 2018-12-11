@@ -439,6 +439,11 @@ chip</description>
 <text x="-1.27" y="1.651" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-2.921" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="FIDUCIAL_40MIL">
+<circle x="0" y="0" radius="0.762" width="0.6096" layer="29"/>
+<circle x="0" y="0" radius="1.04726875" width="0.127" layer="41"/>
+<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FRAMES_A3L-LOC">
@@ -632,6 +637,15 @@ chip</description>
 <circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
 <pin name="VDD_5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="4.064" size="1.778" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="FIDUCIAL">
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<pin name="P$1" x="0" y="0" visible="off" length="point" direction="nc"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -849,6 +863,21 @@ DIN A3, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="FIDUCIAL" prefix="FUD">
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FIDUCIAL_40MIL">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="Nick Lester Final">
@@ -900,6 +929,7 @@ DIN A3, landscape with location and doc. field</description>
 </packages>
 <symbols>
 <symbol name="3_PIN_HEADER">
+<description>3 Pin Header: https://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/Female_Headers.100_DS.pdf</description>
 <wire x1="-4.064" y1="1.27" x2="-4.064" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="-4.064" y1="-1.27" x2="4.064" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="4.064" y1="-1.27" x2="4.064" y2="1.27" width="0.254" layer="94"/>
@@ -913,6 +943,7 @@ DIN A3, landscape with location and doc. field</description>
 <text x="-0.635" y="-3.175" size="0.762" layer="97">SIG</text>
 </symbol>
 <symbol name="2_PIN_HEADER">
+<description>2 Pin Header: https://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/Female_Headers.100_DS.pdf</description>
 <wire x1="-2.794" y1="1.27" x2="-2.794" y2="-1.27" width="0.1524" layer="94"/>
 <wire x1="-2.794" y1="-1.27" x2="2.794" y2="-1.27" width="0.1524" layer="94"/>
 <wire x1="2.794" y1="-1.27" x2="2.794" y2="1.27" width="0.1524" layer="94"/>
@@ -924,6 +955,7 @@ DIN A3, landscape with location and doc. field</description>
 <text x="0.635" y="-3.175" size="1.778" layer="97">+</text>
 </symbol>
 <symbol name="PS1240_BUZZER">
+<description>PS1240 Buzzer: https://www.adafruit.com/product/160?gclid=Cj0KCQiAi57gBRDqARIsABhDSMod10IM6KqyKNG4e1XYbRL67-mP7OMwaXZ0MBZD_4btt3ozxb4l5BUaAtnaEALw_wcB</description>
 <wire x1="-6.1" y1="0" x2="-3.5" y2="0" width="0.15" layer="94"/>
 <wire x1="-3.5" y1="0" x2="-1.5" y2="0" width="0.15" layer="94"/>
 <wire x1="-1.5" y1="0" x2="1.5" y2="0" width="0.15" layer="94"/>
@@ -948,6 +980,7 @@ DIN A3, landscape with location and doc. field</description>
 <text x="-5.8" y="7.8" size="1.778" layer="95" font="vector">&gt;NAME</text>
 </symbol>
 <symbol name="BARREL_CONNECTOR">
+<description>Barrel Connector: https://www.adafruit.com/product/373</description>
 <wire x1="5.08" y1="7.62" x2="-15.24" y2="7.62" width="2.54" layer="94"/>
 <pin name="V+" x="10.16" y="7.62" visible="off" length="middle" direction="out" rot="R180"/>
 <wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.508" layer="94"/>
@@ -966,6 +999,7 @@ DIN A3, landscape with location and doc. field</description>
 </symbols>
 <devicesets>
 <deviceset name="3_PIN_HEADER">
+<description>3 Pin Header: https://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/Female_Headers.100_DS.pdf</description>
 <gates>
 <gate name="G$1" symbol="3_PIN_HEADER" x="0" y="0"/>
 </gates>
@@ -983,6 +1017,7 @@ DIN A3, landscape with location and doc. field</description>
 </devices>
 </deviceset>
 <deviceset name="2_PIN_HEADER">
+<description>2 Pin Header: https://media.digikey.com/pdf/Data%20Sheets/Sullins%20PDFs/Female_Headers.100_DS.pdf</description>
 <gates>
 <gate name="G$1" symbol="2_PIN_HEADER" x="0" y="0"/>
 </gates>
@@ -999,6 +1034,7 @@ DIN A3, landscape with location and doc. field</description>
 </devices>
 </deviceset>
 <deviceset name="PS1240_BUZZER">
+<description>PS1240 Buzzer: https://www.adafruit.com/product/160?gclid=Cj0KCQiAi57gBRDqARIsABhDSMod10IM6KqyKNG4e1XYbRL67-mP7OMwaXZ0MBZD_4btt3ozxb4l5BUaAtnaEALw_wcB</description>
 <gates>
 <gate name="G$1" symbol="PS1240_BUZZER" x="0" y="0"/>
 </gates>
@@ -1015,6 +1051,7 @@ DIN A3, landscape with location and doc. field</description>
 </devices>
 </deviceset>
 <deviceset name="BARREL_CONNECTOR">
+<description>Barrel Connector: https://www.adafruit.com/product/373</description>
 <gates>
 <gate name="G$1" symbol="BARREL_CONNECTOR" x="0" y="0"/>
 </gates>
@@ -1078,6 +1115,9 @@ DIN A3, landscape with location and doc. field</description>
 <part name="GND9" library="ENGI301" deviceset="GND" device=""/>
 <part name="BARREL_CONNECTOR" library="Nick Lester Final" deviceset="BARREL_CONNECTOR" device=""/>
 <part name="GND10" library="ENGI301" deviceset="GND" device=""/>
+<part name="FUD1" library="ENGI301" deviceset="FIDUCIAL" device=""/>
+<part name="FUD2" library="ENGI301" deviceset="FIDUCIAL" device=""/>
+<part name="FUD3" library="ENGI301" deviceset="FIDUCIAL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1099,6 +1139,8 @@ DIN A3, landscape with location and doc. field</description>
 <text x="325.12" y="5.08" size="2.54" layer="94">1 of 1</text>
 <wire x1="5.08" y1="60.96" x2="135.89" y2="60.96" width="0.1524" layer="97"/>
 <text x="11.43" y="48.26" size="6.4516" layer="97">Power Source</text>
+<wire x1="138.43" y1="60.96" x2="260.35" y2="60.96" width="0.1524" layer="97"/>
+<text x="143.51" y="49.53" size="6.4516" layer="97">Mechanical</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -1213,6 +1255,9 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="GND10" gate="1" x="104.14" y="20.32" smashed="yes" rot="R90">
 <attribute name="VALUE" x="106.68" y="17.78" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="FUD1" gate="G$1" x="162.56" y="34.29" smashed="yes"/>
+<instance part="FUD2" gate="G$1" x="175.26" y="34.29" smashed="yes"/>
+<instance part="FUD3" gate="G$1" x="186.69" y="34.29" smashed="yes"/>
 </instances>
 <busses>
 </busses>
